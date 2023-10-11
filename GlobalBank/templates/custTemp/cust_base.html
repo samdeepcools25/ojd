@@ -1,0 +1,76 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>GlobalBank-Customer</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet"href="{% static "bankStatic/style.css" %}">
+    </head>
+    <body>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Global Bank</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                   
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Account({{custProfile.account_no}})</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="/custAdmin/deposit/{{custProfile.account_no}}">Deposit</a></li>
+                            <li><a href="/custAdmin/withdraw/{{custProfile.account_no}}">Withdraw</a></li>
+                            <li><a href="/custAdmin/checkbal/{{custProfile.account_no}}">Check Balnace</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                       
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Report</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="/custAdmin/transaction/{{custProfile.account_no}}">Transaction</a></li>
+                       
+                            <li><a href="#">Other Services</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Email</a>
+                    </li>
+                    <li>
+                        <a href="#">ContactUS</a>
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled CTAs">
+                   
+                    <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Logout</a></li>
+                </ul>
+            </nav>
+{%block content%}
+{%endblock%}
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap Js CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+ $(document).ready(function () {
+     $('#sidebarCollapse').on('click', function () {
+         $('#sidebar').toggleClass('active');
+     });
+ });
+</script>
+</body>
+</html>

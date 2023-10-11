@@ -1,0 +1,30 @@
+{%extends 'bankTemp/base.html'%}
+{%block content%}
+    
+  <div class="container">
+    <h1>Global Bank Customer Login form !!!</h1>
+    <form action="#" method="post" >
+       
+          <div class="mb-3 mt-3 bg-tomato">
+            <label for="na" class="form-label">Enter Aadhar No:</label>
+            <input type="text" class="form-control w-25" pattern="[0-9]{12}"  placeholder="Plz enetr 12 digit aadhar num"
+            maxlength="12" title="Plz enetr 12 digit aadhar num" id="na" placeholder="Enter Aadhar" name="adh">
+          </div>
+         
+          <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control w-25" id="pwd" placeholder="Enter password" name="pwd" maxlength="10">
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="clear" class="btn btn-primary">Clear</button>
+        {%csrf_token%}
+      </form> 
+
+
+
+  </div>
+
+ 
+    
+{%endblock%}

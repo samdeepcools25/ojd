@@ -1,0 +1,276 @@
+
+{%extends 'bankTemp/base.html'%}
+{%load static%}
+{%block content%}
+   
+    <!-- end header -->
+  <section class="slider_section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6"> 
+            <!-- state banner -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active"> <img class="first-slide" src="{% static 'MainStatic/images/banner3.webp' %}   " alt="First slide"> </div>
+                <div class="carousel-item"> <img class="second-slide" src="{% static 'MainStatic/images/banner2.jpg' %}    " alt="Second slide"> </div>
+                <div class="carousel-item"> <img class="third-slide" src="{% static 'MainStatic/images/banner3.webp' %}  " alt="Third slide"> </div>
+              </div>
+               </div>
+            <!-- end banner --> 
+          </div>
+          <div class="col-md-6">
+            <div class="full-slider_cont">
+              <h1>World ‘s popular<br>
+                <span class="dark_brown">Global Bank</span></h1>
+              <p>Global Bank, a 100% Panamanian capital bank, starts operations on June 30,
+                 1994, was originally conceived as a purely corporate bank; However,
+                 given the considerable growth of the first years and with the vision of being an important player in the Panamanian financial sector,
+                 in 1999 we acquired 100% of Colabanco's share capital, becoming the first banking group that started the mergers and bank acquisitions in Panama.
+
+                This transaction tripled the assets of Global Bank, going from 135 to 454 million; As of 1999, Global Bank's growth rates have been steadily higher than those of the industry. </p>
+              <div class="button_section"> <a class="main_bt" href="#">Exchange</a> <a class="main_bt" href="#">About Us</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+<!-- Currency -->
+<div class="Currency">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="titlepage">
+          <h2>NEED TO TAKE CARE OF YOUR <strong class="cur">CURRENCY INVESTMENTS</strong></h2>
+          <span><img src=" {% static 'MainStatic/images/boder.png' %}   " alt="img"/> </span> </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <div class="three-box">
+         
+          <div class="Bitcoin"> <i><img src="{% static 'MainStatic/images/dollar.jpeg' %} " alt="img"/></i>
+            <h3>Business Banking</h3>
+            <p>Complete your banking transactions with ease and security.
+              Business Checking
+              Payments & Business Credit Cards
+              Online Tools & Integration
+              Fraud Prevention.
+            
+           </p>
+          </div>
+          <a class="read-more" href="#">Read More</a> </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <div class="three-box">
+        
+          <div class="Bitcoin"> <i><img src="{% static 'MainStatic/images/dollar.jpeg' %} " alt="img"/></i>
+            <h3>Global Business Solutions</h3>
+            <p>Get customized services to help support your global business.
+              Global Banking Services
+              Global Payments
+              Foreign Exchange Risk Services.
+           </p>
+          </div>
+          <a class="read-more" href="#">Read More</a> </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <div class="three-box">
+         
+          <div class="Bitcoin"> <i><img src="{% static 'MainStatic/images/dollar.jpeg' %} " alt="img"/></i>
+            <h3>Global Fund Banking</h3>
+            <p>Leverage SVB's 30+ years experience in banking top funds.
+              PE Fund Banking
+              VC Fund Banking.
+              we provide good funds 
+              services
+
+           </p>
+          </div>
+          <a class="read-more" href="#">Read More</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end Currency --> 
+<!--state abouts -->
+<div class="abouts"> <dir class="abouts-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="abouts-us">
+          <h3>About Us <strong class="cur">our Banking</strong></h3>
+          <p>With more than 25 years of operations, we can proudly say that we are a private bank of Panamanian capital in a volume of assets and that we currently have a network of 30 branches and 154 ATMs nationwide.
+             During all these years our commitment to the environment has been a fundamental part of our DNA and is the reason that drives us to make efficient use of resources, thus achieving a progressive reduction of our impact on the environment through different initiatives applied in many of our facilities. Proof of this is the Leed BD + C: Core & Shell certification obtained by our Head Office, located in Santa María.</p>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="abouts-us">
+          <figure><img src="{% static 'MainStatic/images/globe.jpg' %}" style="margin-top: 50px;" alt="img not found"/></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  </dir> </div>
+
+<!-- service -->
+<div class="service">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="STRONG"> <i><img src="{% static 'MainStatic/icon/strong.png' %}    " alt="icon"/></i>
+            <h3>STRONG SECURITY</h3>
+            <p>We secure your money by best way</p>
+          </div>
+        </div>
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="world"> <i><img src="{% static 'MainStatic/icon/world.png' %}  " alt="icon"/></i>
+            <h3>WORLD COVERAGE</h3>
+            <p>we have international Coverage.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+        <div class="service-box">
+          <h2>our <strong class="cur">services</strong></h2>
+          <p>The Best Supportand Solidity In One Place. </p>
+          <figure><img class="img-responsive" src=" {% static 'MainStatic/images/service-image.jpg' %}" alt="img"/></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end service --> 
+
+<!-- state abouts -->
+<div class="our experts">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="titlepage2">
+          <h2>our <strong class="cur">Team The best CEOs in Banking for 2023 </strong></h2>
+          <p> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="experts-box">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <div class="experts-threebox">
+            <figure><img src="{% static 'MainStatic/images/experts-1.jpg' %}   " alt="img"/></figure>
+            <h3> William Demchak </h3>
+            <span>Ceo Founder</span>
+            <p>William S. Demchak is Chairman, President and Chief Executive Officer of The PNC Financial Services Group, one of the largest diversified financial services companies in the United States.</p>
+            <div class="icon"> <i> <a href="#"><img src=" {% static 'MainStatic/images/facebook.png' %}   "></a>
+            </i> <i> <a href="#"><img src="{% static 'MainStatic/images/Twitter.png' %}   "></a>
+            </i>  <i> <a href="#"><img src="{% static 'MainStatic/images/instagram.png' %}  "></a></i> </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <div class="experts-threebox">
+            <figure><img src="{% static 'MainStatic/images/experts-2.jpg' %}  " alt="img"/></figure>
+            <h3>William Rogers</h3>
+            <span>Director</span>
+            <p>William H. “Bill” Rogers Jr. is Chairman and Chief Executive Officer of Truist Financial Corporation, a purpose-driven financial services organization committed to inspiring and building better lives and communities.</p>
+            <div class="icon"> <i> <a href="#"><img src="{% static 'MainStatic/images/facebook.png' %}   ">
+            </a></i> <i> <a href="#"><img src="{% static 'MainStatic/images/Twitter.png' %} "></a>
+            </i> <i> <a href="#"><img src="{% static 'MainStatic/images/instagram.png' %} "></a></i> 
+             </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <div class="experts-threebox">
+            <figure><img src="{% static 'MainStatic/images/experts-3.jpg' %}  " alt="img"/></figure>
+            <h3>David Solomon </h3>
+            <span>Money Developer</span>
+            <p>David Solomon is Chairman and Chief Executive Officer and a member of the Board of Directors of The Goldman Sachs Group, Inc.
+               Previously, he was President and Chief Operating Officer and prior
+            <div class="icon"> <i> <a href="#"><img src="{% static 'MainStatic/images/facebook.png' %}   "></a></i> <i> <a href="#"><img src="{% static 'MainStatic/images/Twitter.png' %}  "></a></i> <i> <a href="#"><img src="{% static 'MainStatic/images/linkedin.png' %}  "></a></i> <i> <a href="#"><img src="{% static 'MainStatic/images/instagram.png' %}"></a></i> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end abouts -->
+<div class="Request">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="titlepage3">
+          <h2>Request A call</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <form>
+          <input class="form-control" placeholder="Name" type="Name">
+          <input class="form-control" placeholder="Phone" type="Phone">
+          <input class="form-control" placeholder="Email" type="Email">
+          <textarea class="textarea" placeholder="Message" >Message</textarea>
+        </form>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="Request-box">
+          <figure><img src="{% static 'MainStatic/images/Request.jpg' %}  " alt="img"/></figure>
+          <div class="Register">
+            <h3>Get started today widh digital money bitcon</h3>
+            <p>consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. Ut enim </p>
+            <a href="#">Register now</a> </div>
+        </div>
+      </div>
+      <button class="send-btn">Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <div class="Contact">
+            <h3>Contact Us</h3>
+            <ul class="contant_icon">
+              <li> <a href="#"><img src="{% static 'MainStatic/icon/location.png' %}  "></a></li>
+              <li> <a href="#"><img src="{% static 'MainStatic/icon/tellephone.png' %} "></a></li>
+              <li> <a href="#"><img src="{% static 'MainStatic/icon/email.png' %}"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+          <div class="Social">
+            <h3>Social links</h3>
+            <ul class="socil_link">
+              <li><a href="#"><img src="{% static 'MainStatic/icon/fb.png' %}  "></a></li>
+              <li><a href="#"><img src="{% static 'MainStatic/icon/Tw.png' %}  "></a></li>
+              <li> <a href="#"><img src="{% static 'MainStatic/icon/lin.png' %}  "></a></li>
+              <li> <a href="#"><img src="{% static 'MainStatic/icon/insta.png' %}  "></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+          <div class="newsletter">
+            <h3>newsletter</h3>
+            <input class="new" placeholder="Enter your email" type="Enter your email" >
+            <button class="subscribe">subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <p>Copyright 2019 All Right Reserved By <a href="http://html.design">Free html Templates</a></p>
+    </div>
+  </div>
+</footer>
+
+{%endblock%}

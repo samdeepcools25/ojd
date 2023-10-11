@@ -1,0 +1,50 @@
+{%extends 'bankTemp/base.html'%}
+{%block content%}
+    
+   
+  
+
+<div class="jumbotron">
+
+  <h1>Global Bank Account Opening form !!!</h1>
+  <form action="#" method="post" enctype="multipart/form-data">
+      <div class="mb-3 mt-3 ">
+          <label for="na" class="form-label">Enter Name :</label>
+          <input type="text" class="form-control w-25" id="na" placeholder="Enter Name" name="na">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="na" class="form-label">Enter Aadhar No:</label>
+          <input type="text" class="form-control w-25" pattern="[0-9]{12}" 
+          maxlength="12" title="Plz enetr 12 digit aadhar num" id="na" placeholder="Enter Aadhar" name="adh">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="na" class="form-label">Enter City:</label>
+          <input type="text" class="form-control w-25"  id="na" placeholder="Enter City" name="city">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="na" class="form-label">Enter DOB:</label>
+          <input type="date" class="form-control w-25"   id="na" placeholder="Enter Dob" name="dob">
+        </div>
+       <div class="mb-3 mt-3 ">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control w-25" id="email" placeholder="Enter email" name="em">
+       </div>
+        <div class="mb-3">
+        <label for="pwd" class="form-label">Password:</label>
+        <input type="password" class="form-control w-25" id="pwd" placeholder="Enter password" name="pwd" maxlength="10">
+      </div>
+      <div class="mb-3">
+        <label for="up" class="form-label">Uplaod Photo:</label>
+     
+        <input type="file" class="form-control w-25" name="upload" accept=".jpg,.png">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="clear" class="btn btn-primary">Clear</button>
+      {%csrf_token%}
+    </form> 
+
+
+</div> 
+
+    
+{%endblock%}

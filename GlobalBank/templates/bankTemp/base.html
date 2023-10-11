@@ -1,0 +1,100 @@
+{%load static%}
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- site metas -->
+<title>Digi Bank</title>
+
+<!-- bootstrap css -->
+<link rel="stylesheet" href="{% static "MainStatic/css/bootstrap.min.css"%}    ">
+
+<!-- style css -->
+<link rel="stylesheet" href="{% static "MainStatic/css/style.css"%}">
+<!-- Responsive-->
+<link rel="stylesheet" href="{% static "MainStatic/css/responsive.css"%}   ">
+<!-- fevicon -->
+<link rel="icon" href="{% static 'MainStatic/images/fevicon.png' %}  " type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="{% static "MainStatic/css/jquery.mCustomScrollbar.min.css"%} ">
+
+</head>
+<!-- body -->
+<body class="main-layout">
+    <!--Navabr-->
+     <!-- loader  -->
+<div class="loader_bg">
+    <div class="loader"><img src="{% static 'MainStatic/images/loading.gif' %} " alt="#" /></div>
+  </div>
+  <!-- end loader --> 
+ <!-- header -->
+ <header> 
+    <!-- header inner -->
+    <div class="head-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+            <div class="email"> <a href="#">Email : Globalbank@gmail.com</a> </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+            <div class="icon"> <i> <a href="#"><img src=" {% static 'MainStatic/icon/facebook.png' %}  "></a></i><i> <a href="#"><img src="{% static 'MainStatic/icon/linkedin.png' %}  "></a></i> <i> <a href="#"><img src="{% static 'MainStatic/icon/google+.png' %}  "></a></i> </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+            <div class="contact"> <a href="#">Contact :  +91 9454788220</a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+          <div class="full">
+            <div class="center-desk">
+              <div class="logo"> <a href="index.html"><img src="{% static 'MainStatic/images/logo.jpg' %} " alt="#"></a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+          <div class="menu-area">
+            <div class="limit-box">
+              <nav class="main-menu">
+                <ul class="menu-area-main">
+                  <li class="active"> <a href="/bankAdmin/home">Home</a> </li>
+                  <li> <a href="/bankAdmin/new-account">New Account</a> </li>
+                  <li> <a href="/bankAdmin/login/"> Login</a> </li>
+                  <li> <a href="/bankAdmin/loan/">Loan</a> </li>
+                  <li> <a href="/bankAdmin/contact_us/">Contact us</a> </li>
+                  <li> <a href="#"><img src="{% static 'MainStatic/images/search_icon.png' %}  " alt="#" /></a> </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header inner --> 
+  </header>
+  {%block content%}
+
+  {%endblock%}
+
+
+
+  <!-- end footer --> 
+<script src="{% static "MainStatic/js/jquery.min.js" %}   "></script> 
+<script src=" {% static "MainStatic/js/popper.min.js" %} "></script> 
+<script src=" {% static "MainStatic/js/bootstrap.bundle.min.js" %}   "></script> 
+<script src=" {% static "MainStatic/js/bootstrap.bundle.min.js" %}       "></script> 
+<script src="js/plugin.js"></script> 
+
+<!-- sidebar --> 
+<script src="{% static "MainStatic/js/jquery.mCustomScrollbar.concat.min.js" %}  "></script> 
+<script src="{% static "MainStatic/js/custom.js" %} "></script>
+</body>
+</html>
+
+<!-- Javascript files--> 

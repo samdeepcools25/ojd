@@ -1,0 +1,94 @@
+{%extends 'bankTemp/admin_base.html'%}
+{%block content%}
+
+   <!-- Page Content Holder -->
+   <div id="content">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                    <i class="glyphicon glyphicon-align-left"></i>
+                    <span>Sidebar</span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Page</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h2>Account New Account</h2>
+  
+    <!-- Add Product -->
+    <section>
+       <div class="container-fluid">
+          <div class="row ">
+             <div class="col-lg-10 col-md-8 ml-auto">
+                <div class="row align-items-center pt-md-5 mt-md-5 mb-5">
+                   <div class="col-12">
+                      <div class="card">
+                         <div class="card-body">
+                           <table class="table" width="100%" cellpadding="5px" cellspacing="5px" style="border: 2px solid hotpink">
+                              <thead>
+                                <tr>
+                                  <th>AccountNO:</th>
+                                  <th>Aadhar</th>
+                                  <th>Name</th>
+                                  <th>Email</th>
+                                  <th>City</th>
+                                  <th>Dob</th>                                 
+                                  <th>Image</th>
+                                  <th>Change Status</th>
+                                  <th>Status</th>
+
+                                </tr>
+    
+                              </thead>
+                              <tbody>
+                                {% if account %}
+                            {%for acc in account%}
+                                <tr>
+                                  <td>{{acc.account_no}}</td>
+                                  <td>{{acc.addhar}}</td>
+                                  <td>{{acc.cust_name}}</td>
+                                  <td>{{acc.cust_email}}</td>
+                                  <td>{{acc.cust_city}}</td>
+                                  <td>{{acc.cust_dob}}</td>
+
+
+                                  <td><img src="{{acc.img_url}}" alt="" width="50px" height="50px"></td>
+                                   <td><a href="/bankAdmin/acc_record/{{acc.account_no}}"><button type="button" class="btn btn-primary">Change</button></a></td>
+                                  <td><a href="#"><button type="button" class="btn btn-success">{{acc.acct_st}}</button></a></td>
+                                </tr>
+                          {%endfor%}
+                          {%else%}
+                          <h2>No Product found!!</h2>
+                          {%endif%}
+    
+                              </tbody>
+                            </table>
+    
+    
+                          </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+</div>
+</div>
+{%endblock%}
+
+
+
+
